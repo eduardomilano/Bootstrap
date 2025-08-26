@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de endereço</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/js/bootstrap.min.js">
+</head>
+<body>
+    <div class="container">
+        <h1>Formulario de endereço</h1>
+        <hr>
+        <form>
+            <div class="form-label mb-3">
+                <label for="nome">Logradouro</label>
+                <input type="text" class="form-control" id="logradouro" required>
+                <div class="invalid-feedback">Por favor, insira o logradouro.</div>
+            </div>
+            <div class="form-label mb-3">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" required>
+                <div class="invalid-feedback">Por favor, insira um email válido.</div>
+            </div>
+            <div class="form-label">
+                <label for="endereco">Endereço:</label>
+                <input type="text" class="form-control" id="endereco" required>
+                <div class="invalid-feedback">Por favor, insira o endereço.</div>   
+            </div>
+            <button type="submit" class="btn btn-primary m-3">Enviar</button>
+        </form>
+    </div>
+    <script>
+        (() => {
+            'use strict'
+            const forms = document.querySelectorAll('.needs-validation')
+            Array.from(forms).forEach(form => {
+                form.addEventListener('submit', event => {
+                if (!form.checkValidity()) {
+                    event.preventDefault()
+                    event.stopPropagation()
+                }
+
+                form.classList.add('was-validated')
+                }, false)
+            })
+        })()
+    </script>
+</body>
+</html>
