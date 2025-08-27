@@ -8,41 +8,84 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
     <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </head>
-<body>
-    <nav class="navbar bg-dark navbar-dark navbar-expand-sm py-3 fixed-top sticky-top">
-        <div class="container">
-            <a href="" class="navbar-brand d-flex align-items-center">
+<body class="d-flex flex-column min-vh-100">
+        <nav class="navbar bg-dark navbar-dark navbar-expand-sm py-3 fixed-top sticky-top">
+            <div class="container">
+            <!-- Logo / Marca -->
+                <a href="#" class="navbar-brand d-flex align-items-center">
                 <i class="bi-bootstrap-fill fs-1 me-2"></i>
-                Bootstrap 5</a>
-                
+                Bootstrap 5
+                </a>
+
+                <!-- Botão Toggler (visível em telas pequenas) -->
+                <button 
+                class="navbar-toggler" 
+                type="button" 
+                data-bs-toggle="collapse" 
+                data-bs-target="#navbar" 
+                aria-controls="navbar" 
+                aria-expanded="false" 
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+
+            <!-- Links -->
                 <div class="collapse navbar-collapse" id="navbar">
                     <div class="navbar-nav ms-auto">
-                        <a href="#" class="nav-link active"> Principal </a>
+
+                        <!-- Caixa de busca -->
+                        <form class="d-flex me-2" role="search">
+                            <input 
+                                class="form-control me-2" 
+                                type="search" 
+                                placeholder="Buscar..." 
+                                aria-label="Buscar">
+                        <button class="btn btn-dark" type="submit">
+                            <i class="bi bi-search ms-auto"></i>
+                        </button>
+                        </form>
+
+                        <!-- Botão de Carrinho -->
+                        <button class="btn btn-dark me-2 d-flex align-items-center">
+                        <i class="bi bi-cart-fill me-1"></i>
+                        <span class="d-none d-sm-inline"></span>
+                        </button>
+                        <!--<a href="#" class="nav-link active">Principal</a> -->
                         <div class="dropdown">
                             <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Mais</a>
                             <ul class="dropdown-menu dropdown-menu-end">
-                                <li>
-                                    <a href="#" class="dropdown-item">Sobre</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="dropdown-item">Contato</a>
-                                </li>
+                                <li><a href="#" class="dropdown-item">Sobre</a></li>
+                                <li><a href="#" class="dropdown-item">Contato</a></li>
                             </ul>
                         </div>
                     </div>
                 </div>
-        </div>
-    </nav>
-    <main>
+            </div>
+        </nav>
+
+    <main class="flex-fill">
         <div class="container">
             <h1 class="mt-4">Bem-vindo ao Bootstrap 5</h1>
             <p class="lead">Esta é uma demonstração de um layout simples usando o Bootstrap 5.</p>
             <hr>
-            <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis illo fugiat, omnis unde labore reprehenderit architecto maxime pariatur. Accusantium fuga eum nobis ipsam. Illum, architecto! Ipsam consectetur eius tempore totam quidem possimus. Dolorem aliquam quam facere! Quasi voluptatum impedit iste incidunt aut, sequi reiciendis tenetur placeat dignissimos mollitia non quam saepe ipsam? Tenetur quaerat dignissimos reiciendis tempora ipsa voluptatum explicabo nulla odio minima culpa pariatur eum aut ex similique consectetur et, saepe quia autem, sunt harum consequuntur asperiores dolorum fugit! Id blanditiis fugit saepe enim velit illo. Perspiciatis harum vero excepturi ipsam eius delectus consectetur nisi? Possimus modi sit corrupti. Veniam ad necessitatibus adipisci, mollitia perferendis labore maiores sed rem deserunt consectetur aliquid aliquam, aperiam doloribus! Veritatis id iure quibusdam ducimus minima quia optio accusantium, beatae debitis delectus quisquam at earum voluptas in aliquam sequi quo! Blanditiis rerum voluptas cum laboriosam perferendis, voluptate unde nam illum. Beatae nisi hic aliquam nobis accusantium repellendus veritatis non sed nesciunt aut perspiciatis, aliquid velit, amet laudantium provident magnam minus cupiditate delectus nemo quae dolorem enim voluptatibus animi. Veniam sunt saepe dicta totam ex beatae excepturi fugiat accusamus enim adipisci distinctio autem molestias officiis, ipsa quae amet ab voluptate odit! Esse dicta ducimus beatae quae facilis doloremque, suscipit neque minima at distinctio impedit. Possimus non alias nemo dolores voluptatem hic omnis nisi commodi corrupti dignissimos voluptates, fugiat unde enim. Aliquam voluptas ea rerum minus dolorem. Illum nihil officia, est cum et perspiciatis? Quos saepe, sint neque optio voluptatibus harum iste, nostrum ab officia necessitatibus maxime laudantium maiores nihil asperiores id soluta placeat libero a! Provident, neque dolores? Voluptas esse non, enim magnam tenetur consectetur repellat ratione fugiat blanditiis praesentium placeat veniam similique, totam laborum corporis, deserunt atque reprehenderit voluptate aliquid eum vel quia! Omnis maxime ipsam asperiores eligendi natus esse rerum neque reprehenderit? Cupiditate iusto ea quibusdam autem, tenetur aspernatur. Deserunt, aut. Nemo esse magnam architecto ipsa error debitis officiis molestiae labore unde nostrum animi facilis, quasi tenetur laboriosam. Soluta temporibus culpa saepe dicta quas molestias quasi, quae quaerat ab laboriosam cum pariatur. Vitae nobis, possimus modi, debitis id eos est, neque aliquam mollitia autem reiciendis odio quia reprehenderit quos similique dolores iste! Laborum, iste omnis quaerat, quia ducimus at dolores accusantium culpa quo est blanditiis, veritatis id molestiae. Veniam enim nemo reprehenderit aut animi ea cum quos sint, omnis error vero, natus blanditiis a quod sequi aperiam, corporis obcaecati in nam repellat. Inventore animi error maxime sed dolores vero at rem quisquam laborum cumque non natus quis recusandae, nobis omnis fuga? Dolore est molestiae fugit esse error voluptatum, quibusdam facere perspiciatis quam corporis natus exercitationem dolor eligendi a impedit blanditiis et modi laboriosam ipsa accusamus praesentium eos officiis vero! Aut, ipsa rem deserunt alias odit explicabo error facilis ullam asperiores dolore hic illum non, sed accusamus voluptas? Amet nobis quos blanditiis a similique inventore! Explicabo nulla facilis architecto perferendis, perspiciatis dolorum quod fuga vel ad facere ab deleniti, adipisci harum voluptatibus, quaerat error expedita sapiente. Error unde labore quidem culpa quisquam sit eaque.</p>
+            <p class="lead">Lorem ipsum dolor sit amet.
+                Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+            <p class="lead">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At sint totam nulla laborum quam quasi et iste. Ipsum culpa quaerat sequi tenetur, voluptatem laudantium explicabo laboriosam harum voluptates veniam, omnis quos impedit earum. Nam eligendi labore animi explicabo earum ea? Facere libero ipsa ducimus quae sit nobis a ab natus, nihil, tempore ipsum nulla. Exercitationem cumque ipsam voluptas asperiores laudantium eos laborum nostrum placeat labore culpa tenetur impedit ad esse iusto maiores veniam ipsum, id, sapiente eligendi sunt quam iure fugit. Veritatis soluta odio similique dolores adipisci dolore excepturi deleniti ipsum commodi possimus. Aut vero natus suscipit ullam non repellendus!
+            </p>
+            <p class="lead ">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quod dignissimos perspiciatis iste tenetur temporibus eligendi, possimus facere adipisci? Neque in nulla, voluptas quod sint reprehenderit tempore expedita exercitationem adipisci aliquid aut vitae sit saepe distinctio quis facilis, corrupti libero? Totam, officiis voluptates nobis expedita nam dicta vero! Quibusdam, illo dolorem.
+                
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo et minus ea. Error, inventore excepturi corrupti accusamus officia asperiores ea neque dicta sequi iusto dolores debitis. Harum, porro? Nulla quasi dolor eligendi, magni odit dolorum magnam totam, consectetur et quas quibusdam porro, officia maxime excepturi nisi impedit dolorem nihil quo vitae eos fugiat ea harum beatae! Molestias unde blanditiis vel dolor. Inventore eligendi itaque architecto laborum, cumque incidunt deserunt, excepturi voluptates provident facere vitae adipisci. Repellat beatae est fuga similique qui! Excepturi beatae deserunt dolorum molestiae totam ad quos assumenda quas placeat. Assumenda quo explicabo voluptatem similique? Officia, perferendis fuga.
+            </p>
         </div>
     </main>
-    <footer class="p-4 bg-dark text-light text-center fixed-bottom">
-    &copy; 2025 Bootstrap 5
-</footer>
+    <footer class="p-4 bg-dark text-light text-center mt-auto" >
+        &copy; 2025 Bootstrap 5
+    </footer>
 </body>
 </html>
