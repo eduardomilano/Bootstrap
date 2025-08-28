@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <style>
+        a:hover {
+            text-decoration: underline;
+        }
+        a#site-title:hover {
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body class="d-flex flex-column min-vh-100">
+     <header class="text-white">
+        <nav class="navbar bg-dark navbar-dark navbar-expand-sm py-3 fixed-top sticky-top">
+            <div class="container">
+                <a href="index.html" class="navbar-brand d-flex align-items-center" id="site-title">
+                <i class="bi-bootstrap-fill fs-1 me-2"></i>
+                Site
+                </a>
+                
+                <div>
+                    <button class="btn btn-dark"
+                            type="button"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#painel"
+                            aria-controls="painel">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                </div>
+            </div>
+        </nav>
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="painel" aria-labelledby="painelLabel" data-bs-backdrop="static">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="painelLabel">Menu</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Fechar"></button>
+            </div>
+            <div class="offcanvas-body">
+                <ul class="list-unstyled">
+                    <li>
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li>
+                        <a href="sobre.html" class="nav-link">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="contato.html" class="nav-link">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main class="flex-fill">
+        <section>
+            <div class="container py-5" >
+                <h1>Bem-vindo ao meu site!</h1>
+                <p>Este é um exemplo de página inicial.</p>
+                <p>Você pode navegar pelo site usando o menu.</p>
+                <h3>Subtítulo</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sint enim quam commodi culpa sit ipsa harum molestiae laudantium porro esse dolorem beatae in, magni cupiditate modi aspernatur neque ullam nulla similique nostrum tempora eos. Quas in iusto eveniet a amet modi dolores possimus quae, voluptates quisquam assumenda laboriosam neque, ipsam accusamus autem. Inventore, tempora assumenda recusandae natus sunt obcaecati delectus deserunt eveniet at, harum doloremque, minus magni. Quo quia, veniam laudantium architecto earum laboriosam recusandae perferendis, nulla aliquam, libero est distinctio ipsam. Perspiciatis veniam iste, nihil nesciunt cupiditate itaque! Odit dolorum, magnam repellat aliquam amet voluptate! Veritatis illo praesentium necessitatibus?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate cum debitis, adipisci repudiandae tempora magni vitae fugit, deleniti reiciendis laudantium minima. Non, amet nulla aliquam repellat animi, quis expedita dolorem accusamus similique, quia iusto culpa commodi voluptatum! Sapiente exercitationem qui esse cumque officia? Qui optio et odit ratione ipsam odio autem ipsa quas commodi eius id eveniet explicabo facere pariatur eos distinctio architecto praesentium obcaecati, eligendi quod saepe nulla ducimus aliquid sapiente! Veritatis placeat necessitatibus quidem est molestias aliquid. Quam voluptates quibusdam deleniti, cum delectus laboriosam sint? Facere suscipit vero iste dolorum error, natus optio est, delectus nostrum rem necessitatibus!</p>
+                <hr>
+                <h5>Sub-Subtítulo</h5>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ullam, enim. Corporis rerum quibusdam tenetur aut fuga, magnam eius, nesciunt asperiores et totam incidunt ex, provident possimus delectus! Ducimus quasi temporibus adipisci recusandae inventore. Temporibus, sit odit est doloremque quibusdam, quo, at consectetur aliquid neque eos quasi? Corporis ipsum dolorem omnis porro sint inventore neque. Corrupti praesentium porro ipsa maiores, laborum ipsam dolores ratione laboriosam reprehenderit architecto totam dolorum consectetur! Perspiciatis, quam. Provident explicabo nostrum repellat nemo tenetur consectetur consequuntur impedit aperiam quae rerum rem dolorem non expedita, dicta dignissimos facilis repellendus. Ad repellendus velit beatae adipisci commodi dolor numquam obcaecati praesentium alias reiciendis quasi ipsam, accusamus, fugiat nesciunt sunt saepe possimus dolores. Aspernatur quis officia magni minus similique laudantium, dolores aut velit, consequatur cumque delectus at nostrum ad quas assumenda amet voluptate ea nobis libero ex? Repudiandae, totam? Dolore temporibus minima laboriosam repellendus commodi et deleniti nemo autem sapiente optio?</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, maiores! Cumque voluptatem autem commodi consequatur neque ullam recusandae vero voluptate.</p>
+            </div>
+        </section>
+    </main>
+    <footer class="p-4 bg-dark text-light text-center mt-auto">
+            &copy; milano.html
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</body>
+</html>
